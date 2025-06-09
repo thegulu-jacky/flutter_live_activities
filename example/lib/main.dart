@@ -53,7 +53,9 @@ class _HomeState extends State<Home> {
     super.initState();
 
     _liveActivitiesPlugin.init(
-        appGroupId: 'group.dimitridessus.liveactivities', urlScheme: 'la');
+      appGroupId: 'group.com.foodgulu.dev',
+      urlScheme: 'la',
+    );
 
     if (Platform.isIOS) {
       _liveActivitiesPlugin.activityUpdateStream.listen((event) {
